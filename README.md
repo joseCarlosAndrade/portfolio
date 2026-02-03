@@ -10,7 +10,7 @@ Personal portfolio — Go software engineer, microservices, event-driven archite
 
 ## Adding projects
 
-Edit **`data/projects.json`**. Each project has:
+Stored in **`data/projects.json`**. Each project has:
 
 - `title` — Project name
 - `description` — Short description, your role, outcomes
@@ -28,28 +28,6 @@ Example:
 }
 ```
 
-Add new objects to the array to show more projects.
+## Adding to stack
 
-## Adding to your stack
-
-Edit **`index.html`** and add more `<li class="stack-item">…</li>` inside the `<ul class="stack-list">` (or wire a `data/stack.json` and small JS if you prefer).
-
-## Running locally
-
-Open `index.html` in a browser. For correct loading of `data/projects.json`, use a local server, e.g.:
-
-```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
-
-## Deploying to GitHub Pages
-
-1. Push this repo to GitHub.
-2. **Settings → Pages**.
-3. Under **Source**, choose **Deploy from a branch**.
-4. Branch: **main** (or your default), folder: **/ (root)**.
-5. Save. The site will be at `https://<username>.github.io/<repo-name>/`.
-
-If the repo is named `portfolio`, the URL is `https://<username>.github.io/portfolio/`.
-
+Edit **`index.html`** and add more `<li class="stack-item">…</li>` inside the `<ul class="stack-list">`
