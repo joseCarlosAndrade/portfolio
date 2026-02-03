@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose | Go Software Engineer</title>
+  <meta name="description" content="Portfolio — Golang software engineer focused on microservices, event-driven architecture, and scalable solutions with Kubernetes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#stack" class="nav-link">Stack</a>
+      <a href="#experience" class="nav-link">Experience</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/photo.jpg" alt="Jose" class="hero-photo" width="160" height="160">
+      <h1 class="hero-title">Hi, I'm <span class="accent">Jose</span></h1>
+      <p class="hero-subtitle">Golang Software Engineer — microservices, event-driven systems & scalable infra</p>
+    </section>
+
+    <section id="about" class="section about">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p class="about-intro">
+          [Write a short intro about yourself: background, what drives you, and what you're looking for. 2–3 sentences.]
+        </p>
+        <p>
+          [Expand on your focus: microservices, event-driven distributed architecture, databases, and building scalable solutions with Kubernetes. You can mention years of experience, industries, or what you enjoy most.]
+        </p>
+        <p>
+          [Optional: side interests, open source, talks, or how to reach you.]
+        </p>
+      </div>
+    </section>
+
+    <section id="stack" class="section stack">
+      <h2 class="section-title">Stack</h2>
+      <p class="stack-intro">Technologies and tools I work with.</p>
+      <ul class="stack-list" id="stack-list">
+        <!-- Populated from data/stack.json, or fallback below -->
+        <li class="stack-item">Golang</li>
+        <li class="stack-item">C++</li>
+        <li class="stack-item">Python</li>
+        <li class="stack-item">Linux</li>
+        <li class="stack-item">Kubernetes</li>
+        <li class="stack-item">Docker</li>
+        <li class="stack-item">Git</li>
+        <li class="stack-item">Databases</li>
+        <li class="stack-item">Kafka</li>
+        <li class="stack-item">Redis</li>
+        <li class="stack-item">DevOps</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="section experience">
+      <h2 class="section-title">Experience & Projects</h2>
+      <p class="experience-intro">Selected projects and work.</p>
+      <div class="projects" id="projects-container">
+        <!-- Projects are injected from data/projects.json by JS -->
+        <noscript>
+          <article class="project-card">
+            <h3 class="project-title">[Project name]</h3>
+            <p class="project-description">[Short description of the project, your role, and outcomes.]</p>
+            <ul class="project-tech">
+              <li>Go</li>
+              <li>Kubernetes</li>
+              <li>Kafka</li>
+            </ul>
+            <a href="#" class="project-link">Link (optional)</a>
+          </article>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>[Your email or LinkedIn / GitHub links — update as needed.]</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

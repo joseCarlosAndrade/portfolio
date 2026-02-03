@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Notification Server",
+    "description": "Go microservice for notifications: Redpanda as the event queue, MongoDB for storage, REST API for fetching notifications and marking them as read. Uses Redis for caching and pub/sub. Work in progress — learning custom log (Zap) and OpenTelemetry wrappers, consumer groups, and health probes.",
+    "tech": ["Go", "Redpanda", "MongoDB", "Redis", "Docker"],
+    "link": "https://github.com/joseCarlosAndrade/notification-server"
+  },
+  {
+    "title": "[Project name]",
+    "description": "[Short description of the project, your role, and outcomes. E.g. Built a Go microservice for order processing with Kafka and Redis.]",
+    "tech": ["Go", "Kubernetes", "Kafka"],
+    "link": null
+  },
+  {
+    "title": "[Another project]",
+    "description": "[Describe the problem, architecture, and your contribution.]",
+    "tech": ["Docker", "PostgreSQL", "Redis"],
+    "link": "https://github.com/yourusername/repo"
+  },
+  {
+    "title": "[Third project]",
+    "description": "[Add as many projects as you like — duplicate this object and fill in.]",
+    "tech": ["Python", "Linux", "DevOps"],
+    "link": null
+  }
+]
