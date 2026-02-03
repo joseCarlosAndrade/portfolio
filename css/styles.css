@@ -80,6 +80,24 @@ main {
   object-fit: cover;
   border: 3px solid var(--border);
 }
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: 0 auto var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+.hero-go-icon {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
 .hero-title {
   font-family: var(--font-mono);
   font-size: clamp(1.75rem, 5vw, 2.25rem);
@@ -107,6 +125,7 @@ main {
   font-weight: 500;
   margin: 0 0 var(--space-lg);
   color: var(--text);
+  text-align: center;
 }
 .section-title::after {
   content: "";
@@ -115,9 +134,14 @@ main {
   height: 2px;
   background: var(--accent);
   margin-top: var(--space-xs);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* --- About --- */
+.about-content {
+  text-align: justify;
+}
 .about-content p {
   margin: 0 0 var(--space-md);
   color: var(--text-muted);
@@ -135,6 +159,7 @@ main {
   margin: 0 0 var(--space-lg);
   color: var(--text-muted);
   font-size: 0.95rem;
+  text-align: center;
 }
 .stack-list {
   display: flex;
@@ -143,8 +168,12 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 .stack-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-family: var(--font-mono);
   font-size: 0.85rem;
   padding: var(--space-sm) var(--space-md);
@@ -157,12 +186,71 @@ main {
   border-color: var(--accent);
   color: var(--accent);
 }
+.stack-item:hover .stack-icon {
+  filter: brightness(1.35);
+}
+.stack-icon {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
 
 /* --- Experience / Projects --- */
 .experience-intro {
   margin: 0 0 var(--space-lg);
   color: var(--text-muted);
   font-size: 0.95rem;
+  text-align: center;
+}
+.work-experience {
+  margin-bottom: var(--space-2xl);
+}
+.work-card {
+  padding: var(--space-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: justify;
+}
+.work-header {
+  margin-bottom: var(--space-md);
+}
+.work-title {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 var(--space-xs);
+  color: var(--text);
+}
+.work-company {
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+.work-date {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+}
+.work-highlights {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.work-highlights li {
+  margin-bottom: var(--space-sm);
+}
+.work-highlights li:last-child {
+  margin-bottom: 0;
+}
+.subsection-title {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 var(--space-lg);
+  color: var(--text-muted);
+  text-align: center;
 }
 .projects {
   display: flex;
@@ -175,6 +263,7 @@ main {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: border-color 0.2s;
+  text-align: justify;
 }
 .project-card:hover {
   border-color: var(--border);
@@ -210,8 +299,15 @@ main {
 }
 .project-links {
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
 }
 .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
   color: var(--accent);
   text-decoration: none;
   font-size: 0.9rem;
@@ -220,6 +316,13 @@ main {
 .project-link:hover {
   color: var(--accent-dim);
   text-decoration: underline;
+}
+.project-link:hover .project-link-icon {
+  filter: brightness(1.35);
+}
+.project-link-icon {
+  flex-shrink: 0;
+  vertical-align: middle;
 }
 .projects-error {
   color: var(--text-muted);
@@ -231,6 +334,153 @@ main {
   background: var(--surface);
   padding: 2px 6px;
   border-radius: 4px;
+}
+
+/* --- Education --- */
+.education-content {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-align: justify;
+}
+.education-item {
+  margin-bottom: var(--space-lg);
+}
+.education-school {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0 0 var(--space-xs);
+  color: var(--text);
+  text-align: center;
+}
+.education-institute,
+.education-degree {
+  margin: 0 0 var(--space-xs);
+  text-align: center;
+}
+.education-date {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-top: var(--space-sm);
+  text-align: center;
+}
+.education-extracurricular {
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* --- Languages --- */
+.languages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  justify-content: center;
+}
+.languages-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+}
+.lang-flag {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+.lang-name {
+  color: var(--text);
+  font-weight: 500;
+}
+.lang-level {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  margin-left: auto;
+}
+
+/* --- Certifications & Awards --- */
+.certifications-content {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-align: justify;
+}
+.cert-subsection {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: var(--space-lg) 0 var(--space-md);
+  color: var(--text);
+  text-align: center;
+}
+.cert-subsection:first-child {
+  margin-top: 0;
+}
+.cert-list {
+  margin: 0 0 var(--space-md);
+  padding-left: 1.25rem;
+  line-height: 1.65;
+}
+.cert-list li {
+  margin-bottom: var(--space-sm);
+}
+.cert-list li:last-child {
+  margin-bottom: 0;
+}
+.cert-list strong {
+  color: var(--text);
+}
+.cert-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+.cert-link:hover {
+  color: var(--accent-dim);
+  text-decoration: underline;
+}
+
+/* --- Contact --- */
+.contact-intro {
+  margin: 0 0 var(--space-lg);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-align: center;
+}
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  justify-content: center;
+  align-items: center;
+}
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: color 0.2s, border-color 0.2s;
+}
+.contact-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.contact-link:hover .contact-icon {
+  filter: brightness(1.35);
+}
+.contact-icon {
+  flex-shrink: 0;
 }
 
 /* --- Footer --- */

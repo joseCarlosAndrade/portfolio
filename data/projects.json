@@ -6,21 +6,10 @@
     "link": "https://github.com/joseCarlosAndrade/notification-server"
   },
   {
-    "title": "[Project name]",
-    "description": "[Short description of the project, your role, and outcomes. E.g. Built a Go microservice for order processing with Kafka and Redis.]",
-    "tech": ["Go", "Kubernetes", "Kafka"],
-    "link": null
-  },
-  {
-    "title": "[Another project]",
-    "description": "[Describe the problem, architecture, and your contribution.]",
-    "tech": ["Docker", "PostgreSQL", "Redis"],
-    "link": "https://github.com/yourusername/repo"
-  },
-  {
-    "title": "[Third project]",
-    "description": "[Add as many projects as you like — duplicate this object and fill in.]",
-    "tech": ["Python", "Linux", "DevOps"],
-    "link": null
+    "title": "Swarm in Blocks",
+    "description": "High-level block-based interface for controlling drone swarms (Team Atena, SEMEAR/USP). CopterHack 2022 & 2023: Swarm Station (3D web visualizer, real-time drone state), collision avoidance, ROS/Clover integration. Programming via blocks or Python; planning, simulation, and navigation modes.",
+    "tech": ["JavaScript", "Python", "ROS", "Clover", "Gazebo"],
+    "link": "https://github.com/Grupo-SEMEAR-USP/swarm_in_blocks",
+    "youtube": "https://www.youtube.com/watch?v=QFKgrqIAO1E"
   }
 ]
