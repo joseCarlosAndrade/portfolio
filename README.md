@@ -53,8 +53,3 @@ python3 -m http.server 8000
 
 If the repo is named `portfolio`, the URL is `https://<username>.github.io/portfolio/`.
 
-## Customization
-
-- Replace `[Your Name]` and all `[…]` placeholders in `index.html`.
-- Update the footer with your email/LinkedIn/GitHub.
-- Tweak colors and fonts in `css/styles.css` (`:root` variables).
