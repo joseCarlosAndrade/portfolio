@@ -18,5 +18,11 @@
     "tech": ["JavaScript", "Python", "ROS", "Clover", "Gazebo"],
     "link": "https://github.com/Grupo-SEMEAR-USP/swarm_in_blocks",
     "youtube": "https://www.youtube.com/watch?v=QFKgrqIAO1E"
+  },
+  {
+    "title" : "Resilient Distributed Systems Patterns",
+    "description" : "Explored and implemented patterns for building resilient distributed systems, focusing on fault tolerance, scalability, and maintainability.",
+    "tech" : ["Go", "Kubernetes", "Docker", "Logger", "OpenTelemetry", "Circuit Breaker", "Retry Logic", "load Balancing"],
+    "link" : "https://github.com/jotace-labs/resilient-microservices-pattern"
   }
 ]
