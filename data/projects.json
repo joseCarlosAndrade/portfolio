@@ -2,9 +2,16 @@
   {
     "title": "Notification Server",
     "description": "Go microservice for notifications: Redpanda as the event queue, MongoDB for storage, REST API for fetching notifications and marking them as read. Uses Redis for caching and pub/sub. Work in progress — learning custom log (Zap) and OpenTelemetry wrappers, consumer groups, and health probes.",
-    "tech": ["Go", "Redpanda", "MongoDB", "Redis", "Docker"],
+    "tech": ["Go", "Kafka","Redpanda", "MongoDB", "Redis", "Docker"],
     "link": "https://github.com/joseCarlosAndrade/notification-server"
   },
+  {
+    "title": "Training Neural Networks to play Snake from Scratch in C++",
+    "description": "Implemented a simple feedforward neural network in C++ to play the Snake game. The network takes the game state as input and outputs the next move. Trained using a genetic algorithm, where multiple instances of the game run in parallel, and the best-performing networks are selected for reproduction. The project demonstrates how to build and train a neural network from scratch without relying on external libraries.",
+    "tech": ["C++", "Neural Networks", "Genetic Algorithm", "Sdl2"],
+    "link": "https://github.com/joseCarlosAndrade/SnakeGame-AI",
+    "image" : "assets/snakes.png"
+    },
   {
     "title": "Swarm in Blocks",
     "description": "High-level block-based interface for controlling drone swarms (Team Atena, SEMEAR/USP). CopterHack 2022 & 2023: Swarm Station (3D web visualizer, real-time drone state), collision avoidance, ROS/Clover integration. Programming via blocks or Python; planning, simulation, and navigation modes.",

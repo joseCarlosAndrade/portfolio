@@ -22,10 +22,12 @@
           links.push('<a href="' + escapeHtml(p.youtube) + '" class="project-link" target="_blank" rel="noopener">' + ytIcon + ' Video</a>');
         }
         const linkHtml = links.length ? '<p class="project-links">' + links.join('') + '</p>' : '';
+        const imageHtml = p.image ? '<img src="' + escapeHtml(p.image) + '" alt="' + escapeHtml(p.title) + '" class="project-image">' : '';
         return (
           '<article class="project-card">' +
             '<h3 class="project-title">' + escapeHtml(p.title) + '</h3>' +
             '<p class="project-description">' + escapeHtml(p.description) + '</p>' +
+            imageHtml +
             '<ul class="project-tech">' + techList + '</ul>' +
             linkHtml +
           '</article>'
